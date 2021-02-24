@@ -53,6 +53,7 @@
         height: 0;
         overflow: hidden;
         z-index: 5;
+        background: white;
         &.active{
             height: 100vh;
         }
@@ -66,6 +67,7 @@
         align-items: center;
         height: 0;
         overflow: hidden;
+        background: white;
         &.active{
             height: 100vh;
         }
