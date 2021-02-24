@@ -1,0 +1,189 @@
+.container {
+  max-width: 1140px;
+}
+
+.top_side {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/gelenvagen-3840x2160-gelik-vnedorojnik-mersedes-2364.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.top_side.block_hidden {
+  height: 0;
+  overflow: hidden;
+}
+
+.top_side .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.top_side .container .game_form {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top_side .container .game_form select {
+  margin-bottom: 30px;
+}
+
+.bottom_side {
+  width: 100%;
+  height: 0;
+  overflow: auto;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  background: url(../images/4c7d044ffc2ae394d9f8bf2f0c961d25.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom_side.active {
+  height: auto;
+}
+
+.bottom_side .result {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.bottom_side .result.active {
+  height: 100vh;
+}
+
+.bottom_side .winner_holder {
+  width: 100%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 0;
+  overflow: hidden;
+}
+
+.bottom_side .winner_holder.active {
+  height: 100vh;
+}
+
+.bottom_side .card_wrapper {
+  width: 100%;
+  padding: 120px 0;
+}
+
+.bottom_side .card_wrapper .question_area {
+  width: 100%;
+  border-radius: 10   px;
+  background: rgba(255, 255, 255, 0.507);
+  -webkit-box-shadow: 5px 5px 5px #ccc;
+          box-shadow: 5px 5px 5px #ccc;
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+.bottom_side .card_wrapper .question_area .timer {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 100px;
+  height: 50px;
+  background: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 15px 15px 0 0;
+}
+
+.bottom_side .card_wrapper .question_area #question {
+  color: #ccc;
+}
+
+.bottom_side .card_wrapper .cards_area {
+  width: 100%;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.507);
+  -webkit-box-shadow: 5px 5px 7px #ccc;
+          box-shadow: 5px 5px 7px #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bottom_side .card_wrapper .cards_area .box {
+  width: 100px;
+  height: 100px;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  outline: none;
+  margin-bottom: 20px;
+  margin-right: 25px;
+}
+
+.bottom_side .card_wrapper .cards_area .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=main.css.map */

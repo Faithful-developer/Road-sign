@@ -1,0 +1,126 @@
+.container{
+    max-width: 1140px;
+}
+
+.top_side{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/gelenvagen-3840x2160-gelik-vnedorojnik-mersedes-2364.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all ease 0.5s;
+    &.block_hidden{
+        height: 0;
+        overflow: hidden;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .game_form{
+            width: 400px;
+            display: flex;
+            flex-direction: column  ;
+            align-items: center;
+            select{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.bottom_side{
+    width: 100%;
+    height: 0;
+    overflow: auto;
+    transition: all ease 0.5s;
+    background: url(../images/4c7d044ffc2ae394d9f8bf2f0c961d25.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    &.active{
+        height: auto;
+    }
+    .result{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        z-index: 5;
+        &.active{
+            height: 100vh;
+        }
+    }
+    .winner_holder{
+        width: 100%;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 0;
+        overflow: hidden;
+        &.active{
+            height: 100vh;
+        }
+    }
+    .card_wrapper{
+        width: 100%;
+        padding: 120px 0;
+        .question_area{
+            width: 100%;
+            border-radius: 10   px;
+            background: rgba(255, 255, 255, 0.507);
+            box-shadow: 5px 5px 5px #ccc;
+            text-align: center;
+            position: relative;
+            padding: 20px 0;
+            .timer{
+                position: absolute;
+                right: 0;
+                top: -50px;
+                width: 100px;
+                height: 50px;
+                background: blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 20px;
+                border-radius: 15px 15px 0 0;
+            }
+            #question{
+                color: #ccc;
+            }
+        }
+        .cards_area{
+            width: 100%;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.507);
+            box-shadow: 5px 5px 7px #ccc;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .box{
+                width: 100px;
+                height: 100px;
+                border: none;
+                background:rgba(255, 255, 255, 0.7);
+                outline: none;
+                margin-bottom: 20px;
+                margin-right: 25px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

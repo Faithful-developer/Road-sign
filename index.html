@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <section class="top_side ">
+        <div class="container">
+            <form class="game_form">
+                <select id="game_type" class="form-control">
+                    <option value="choose" selected disabled>Choose...</option>
+                    <option value="20">Easy</option>
+                    <option value="40">Normal</option>
+                    <option value="60">Hard</option>
+                </select>
+                <select  id="game_time" class="form-control">
+                    <option value="60" selected>1 Minut</option>
+                    <option value="120">2 Minut</option>
+                    <option value="180">3 Minut</option>
+                    <option value="240">4 Minut</option>
+                    <option value="300">5 Minut</option>
+                    <option value="360">6 Minut</option>
+                    <option value="420">7 Minut</option>
+                    <option value="480">8 Minut</option>
+                    <option value="540">9 Minut</option>
+                    <option value="600">10 Minut</option>
+                </select>
+                <button type="submit" class="btn btn-outline-primary" id="submit" disabled>Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="bottom_side">
+        <div class="container">
+            <div class="result">
+                <h1>Game Over</h1>
+                <p>Your score: <span id="game_result"></span></p>
+            </div>  
+            <div class="winner_holder">
+                <h1>You are winner</h1>
+            </div>
+            <div class="card_wrapper">
+                <div class="question_area">
+                    <div class="timer">
+                        <span class="minut">00</span> :
+                        <span class="second">00</span>
+                    </div>
+                    <h1 id="question">Are you ready ?</h1>
+                </div>
+                <div class="cards_area">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
